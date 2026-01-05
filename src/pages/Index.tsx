@@ -188,17 +188,7 @@ const demons: Demon[] = [
     weakness: 'Вода размягчает и уничтожает, огонь превращает в пепел за секунды',
     description: 'Белоснежный демон-лист. Обманчиво хрупкий на вид, но его края острее лезвия.'
   },
-  { 
-    id: 15, 
-    name: 'Демон-Тени', 
-    type: 'Эфемерный', 
-    power: 3, 
-    danger: 2, 
-    price: 100000, 
-    ability: 'Перемещается через тени, становится невидимым в темноте, душит жертв их собственной тенью', 
-    weakness: 'Яркий свет полностью обездвиживает, не может существовать при полном освещении',
-    description: 'Бесформенный чёрный силуэт. Идеален для ночных операций, но бесполезен днём.'
-  },
+
   { 
     id: 16, 
     name: 'Демон-Льда', 
@@ -482,14 +472,14 @@ const Index = () => {
                     <Dialog>
                       <DialogTrigger asChild>
                         <Button size="sm" className="bg-primary hover:bg-accent transition-colors">
-                          Заключить контракт
+                          Заключить сделку
                         </Button>
                       </DialogTrigger>
                       <DialogContent className="bg-card border-border">
                         <DialogHeader>
                           <DialogTitle className="text-2xl">{demon.name}</DialogTitle>
                           <DialogDescription className="text-muted-foreground">
-                            Детали контракта с демоном
+                            Детали сделки с демоном
                           </DialogDescription>
                         </DialogHeader>
                         <div className="space-y-4 py-4">
